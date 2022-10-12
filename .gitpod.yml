@@ -1,6 +1,7 @@
 tasks:
   - init: |
-      bash init.sh
+      echo "Ignore the init the install is redirected to post-prebuild"
   - command: |
+      bash init.sh
       docker run -d --network host web-server:main
       echo "Everything is installed now. By defaut this configuration file only starts web server. If you want to change this config file just simply fork this repository and edit the file"
